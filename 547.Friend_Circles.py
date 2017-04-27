@@ -16,6 +16,5 @@ class Solution(object):
             if not visited_list[m]:
                 dfs(visited_list, m, M, len(M))
                 ans += 1
-    
+
         return ans
- 
