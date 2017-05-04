@@ -1,11 +1,8 @@
-int hammingDistance(int x, int y) {
-    int ans = 0;
-    while (x != 0 || y != 0) {
-        if (x % 2 != y % 2){
-            ans += 1;
-        }
-        x /= 2;
-        y /= 2;
-    }
-    return ans;
-}
+class Solution(object):
+    def hammingDistance(self, x, y):
+        """
+        :type x: int
+        :type y: int
+        :rtype: int
+        """
+        return bin(x^y).count('1')
